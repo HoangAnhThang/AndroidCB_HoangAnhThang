@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="200px"
+        android:background="#0099CC"
+        android:text="Lap Trinh Su Kien"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="411dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="So A:" />
+
+            <EditText
+                android:id="@+id/txt_A"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nhap A"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:text="So B:" />
+
+            <EditText
+                android:id="@+id/txt_B"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:ems="10"
+                android:hint="Nhap B"
+                android:inputType="text" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="506dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <TextView
+            android:id="@+id/txt_KQ"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#3333FF"
+            android:textColor="#00FF00" />
+
+
+        <Button
+            android:id="@+id/btn_Tong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tong 2 So" />
+
+        <Button
+            android:id="@+id/btn_Hieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hieu 2 So" />
+
+        <Button
+            android:id="@+id/btn_Tich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tich 2 So" />
+
+        <Button
+            android:id="@+id/btn_Thuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thuong 2 So" />
+
+        <Button
+            android:id="@+id/btn_UCLN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uoc Chung Lon Nhat" />
+
+        <Button
+            android:id="@+id/btn_Exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thoat Chuong Trinh" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
